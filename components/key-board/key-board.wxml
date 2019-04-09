@@ -1,0 +1,36 @@
+<!--components/comkeyboard.wxml-->
+<view class="m-keyboard {{open?' keyboard-show':''}}" id="J_KeyBoard" style='padding-bottom:{{isIphoneX?"30":""}}rpx' catchtouchmove="ture">
+    <view class="keyboard-head">
+        <strong>输入6位数字密码</strong>
+    </view>
+    <view class="keyboard-error">{{keyError}}</view>
+    <view class="keyboard-password J_FillPwdBox">
+        <view wx:for="{{6}}" wx:key="{{item}}">
+            <text style='display:{{keyVal[index] == index ? "block" : "none"}}'></text>
+        </view>
+    </view>
+    <view class="keyboard-content">
+        <view class="keyboard-title"><image src='{{logo}}' mode='aspectFit'></image>{{objname}}安全键盘</view>
+        <view class="keyboard-numbers">
+            <view wx:for="{{numberArr}}" wx:key="key" class='big'>
+                <view
+                    class="J_Nums"
+                    wx:for="{{item}}"
+                    wx:key="{{num}}"
+                    wx:for-item="num"
+                    bindtap='keyValue'
+                    data-num='{{num}}'
+                >{{num}}</view>
+            </view>
+            <view class='big'>
+                <view class="J_Cancel" bindtap='openAndClose'>取消</view>
+                <view class="J_Nums" bindtap='keyValue' data-num='0'>0</view>
+                <view bindtap='keyDeleteValue'>
+                    <image src='./images/keyclose.png'></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 黑色层 -->
+<view class='{{open ? "Mask":""}}' bindtap='openAndClose' catchtouchmove="ture"></view>

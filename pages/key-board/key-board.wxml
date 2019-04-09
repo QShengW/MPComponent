@@ -1,0 +1,11 @@
+<!--pages/key-board/key-board.wxml-->
+<!-- 6位数数字键盘的使用 -->
+<button bindtap='thisKeyBoardOpen'>输入密码</button>
+<!-- 引入组件 app.json中使用-->
+<key-board
+    open="{{open}}"
+    logo=""
+    objname="组件"
+    bind:keyBoard="keyBoard"
+    keyError="{{keyError}}"
+/>
