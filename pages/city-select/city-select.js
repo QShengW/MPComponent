@@ -14,7 +14,29 @@ Page({
     onLoad: function (options) {
 
     },
-
+    /**
+     * 显示省市区选择
+     */
+    showCitySelect: function () {
+        this.setData({
+            show: true
+        })
+    },
+    /**
+     * 城市选择结束
+     */
+    cityValue: function (e) {
+        console.log(e.detail.value)
+        let value = e.detail.value, str = ''
+        value.map((item, i) => {
+            str = str + '，' + item.name
+        })
+        console.log(str.slice(1, str.length))
+        this.setData({
+            cityValue: str.slice(1, str.length),
+            citySetValue: value
+        })
+    },
     /**
      * 生命周期函数--监听页面初次渲染完成
      */

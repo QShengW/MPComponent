@@ -1,2 +1,5 @@
 <!--pages/city-select/city-select.wxml-->
-<text>pages/city-select/city-select.wxml</text>
+<button bindtap='showCitySelect'>省市区选择</button>
+<!-- 选择后的值 -->
+<text>{{cityValue}}</text>
+<city-select isShow="{{show}}" bind:cityValue="cityValue" isArea="{{false}}"/>

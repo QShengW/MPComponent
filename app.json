@@ -11,6 +11,7 @@
         "navigationBarTextStyle": "black"
     },
     "usingComponents": {
-        "key-board": "/components/key-board/key-board"
+        "key-board": "/components/key-board/key-board",
+        "city-select": "/components/city-select/city-select"
     }
 }

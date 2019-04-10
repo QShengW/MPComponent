@@ -28,13 +28,31 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "6位数键盘",
+					"pathName": "pages/key-board/key-board",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "省市区选择",
+					"pathName": "pages/city-select/city-select",
+					"scene": null
+				}
+			]
 		}
 	}
 }

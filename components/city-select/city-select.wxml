@@ -1,0 +1,77 @@
+<!--components/com-cityselect/com-cityselect.wxml-->
+
+<!-- 城市 -->
+<view class='{{isShow ? "Mask":""}}' bindtap='isShow'></view>
+
+<view class="m-cityselect {{isShow ? 'brouce-in':''}}">
+    <view class="cityselect-header">
+        <view class="cityselect-title">所在地区</view>
+        <view class="cityselect-nav">
+            <block wx:if="{{cityselect.length == 0}}">
+                <text class="crt">请选择</text>
+            </block>
+            <block wx:if="{{cityselect.length > 0}}">
+                <text
+                    class="{{crtIndex == index ? 'crt' : ''}}"
+                    wx:for="{{cityselect}}"
+                    wx:key="key"
+                    data-index='{{index}}'
+                    bindtap='headerNav'
+                >{{item.name}}</text>
+            </block>
+        </view>
+    </view>
+    <view class="cityselect-content cityselect-move-animate {{ scrollY ?'cityselect-next':'cityselect-prev'}}">
+        <!-- 省 -->
+        <scroll-view class="cityselect-item" scroll-y>
+            <view class="cityselect-item-box">
+                <view
+                    class="texta"
+                    wx:for="{{provinces}}"
+                    wx:key="provinces"
+                    data-name='{{item.location_name}}'
+                    data-id='{{item.location_id}}'
+                    data-index="{{index}}"
+                    bindtap='provincesClick'
+                >
+                    <text>{{item.location_name}}</text>
+                    <image wx:if="{{item.click}}" src='./images/select.png'></image>
+                </view>
+            </view>
+        </scroll-view>
+        <!-- 市 -->
+        <scroll-view class="cityselect-item" scroll-y>
+            <view class="cityselect-item-box">
+                <view
+                    class="texta {{item.click ? 'crt' : ''}}"
+                    wx:for="{{city}}"
+                    wx:key="city"
+                    data-name='{{item.location_name}}'
+                    data-id='{{item.location_id}}'
+                    data-index="{{index}}"
+                    bindtap='cityClick'
+                >
+                    <text>{{item.location_name}}</text>
+                    <image wx:if="{{item.click}}" src='./images/select.png'></image>
+                </view>
+            </view>
+        </scroll-view>
+        <!-- 区 -->
+        <scroll-view class="cityselect-item" scroll-y>
+            <view class="cityselect-item-box">
+                <view
+                    class="texta {{item.click ? 'crt' : ''}}"
+                    wx:for="{{regions}}"
+                    wx:key="regions"
+                    data-name='{{item.location_name}}'
+                    data-id='{{item.location_id}}'
+                    data-index="{{index}}"
+                    bindtap='regionsClick'
+                >
+                    <text>{{item.location_name}}</text>
+                    <image wx:if="{{item.click}}" src='./images/select.png'></image>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>
