@@ -13,6 +13,8 @@ Current projects include component encapsulation for everyday use
 ```
 ## 6位数数字键盘效果  
 ![image](https://upload-images.jianshu.io/upload_images/7465865-1485ded5d729692a.gif?imageMogr2/auto-orient/strip)
-## 省市区选择效果  
+## 省市区 选择效果   
 ![image](https://upload-images.jianshu.io/upload_images/7465865-6d8febb833f8a1cd.gif?imageMogr2/auto-orient/strip)
+## 菊花加载更多
+![image](https://upload-images.jianshu.io/upload_images/7465865-30817c206665cdec.gif?imageMogr2/auto-orient/strip)
 
