@@ -6,9 +6,10 @@ Current projects include component encapsulation for everyday use
 ├── components               # 封装的组件
 ├── images                   # 使用界面的图片
 ├── pages
-│   ├── city-select          # 省市区选择 的使用
 │   ├── index                # 项目的首页 跳转至相关使用的界面效果
+│   ├── city-select          # 省市区选择 的使用
 │   ├── key-board            # 6位数安全键盘 的使用
+|   ├── load-more            # 菊花加载更多的使用
 ├── ..............           
 ```
 ## 6位数数字键盘效果  
