@@ -1,29 +1,23 @@
-// pages/index/index.js
+// pages/no-data/no-data.js
 Page({
+
     /**
      * 页面的初始数据
      */
     data: {
-        list:[
-            {
-                name: '6位数键盘',
-                url: '/pages/key-board/key-board'
-            },
-            {
-                name: '省市区选择',
-                url: '/pages/city-select/city-select'
-            },
-            {
-                name: '菊花加载更多',
-                url: '/pages/load-more/load-more'
-            },
-        ]
+        isMore: true
     },
+
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
 
+    },
+    handleMore:function(){
+        this.setData({
+            isMore: !this.data.isMore
+        })
     },
     /**
      * 生命周期函数--监听页面初次渲染完成
@@ -31,7 +25,7 @@ Page({
     onReady: function () {
 
     },
-
+    
     /**
      * 生命周期函数--监听页面显示
      */

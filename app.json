@@ -2,7 +2,8 @@
     "pages": [
         "pages/index/index",
         "pages/key-board/key-board",
-        "pages/city-select/city-select"
+        "pages/city-select/city-select",
+        "pages/load-more/load-more"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -12,6 +13,7 @@
     },
     "usingComponents": {
         "key-board": "/components/key-board/key-board",
+        "load-more": "/components/load-more/load-more",
         "city-select": "/components/city-select/city-select"
     }
 }

@@ -1,0 +1,3 @@
+<!--pages/no-data/no-data.wxml-->
+<button bindtap='handleMore'>切换加载状态</button>
+<load-more moreText="暂无更多案例" isMore="{{isMore}}"/>

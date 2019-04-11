@@ -1,0 +1,84 @@
+/*暂无更多*/
+.more{
+    margin-top: 30rpx;
+    width: 100%;
+    text-align: center;
+    font-size: 26rpx;
+    color: #999;
+    transition: all .6s ease-out;
+    padding-bottom: 40rpx
+}
+.more text{
+    display: inline-block;
+    width: 70rpx;
+    height: 1px;
+    margin: 0 26rpx;
+    background-color: #d8d8d8;
+    vertical-align: middle;
+}
+
+/*css3 loading*/
+
+.spin {
+    -webkit-transform: rotate(360deg);
+    -webkit-animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.spin {
+    transform: rotate(360deg);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* IE6-IE9实现 */
+
+/* IE10+以及其他或骚或帅之流 */
+
+.loading {
+    margin-top: 17rpx;
+    margin-right: 34rpx;
+    background: none;
+    width: 3px;
+    height: 3px;
+    border-radius: 100%; /* 圆角 */
+    box-shadow: 0 -10px 0 1px #999,
+                /* 上,
+                1px 扩展 */ 10px 0px #999,
+                /* 右 */ 0 10px #999,
+                /* 下 */ -10px 0 #999,
+                /* 左 */ -7px -7px 0 0.5px #999,
+                /* 左上,
+                0.5px扩展 */ 7px -7px 0 1.5px #999,
+                /* 右上,
+                1.5px扩展 */ 7px 7px #999,
+                /* 右下 */ -7px 7px #999; /* 左下 */
+}
+.loadingView{
+    margin-top: 35rpx;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 28rpx;
+    color: #999;
+    padding-bottom: 60rpx
+}

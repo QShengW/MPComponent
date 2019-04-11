@@ -1,0 +1,11 @@
+<!--components/commenu.wxml-->
+<block wx:if="{{isMore}}">
+    <view class="loadingView">
+        <view class='loading spin'></view><text>加载中</text>
+    </view>
+</block>
+<block wx:else>
+    <view class='more'>
+        <text></text>{{moreText}}<text></text>
+    </view>
+</block>

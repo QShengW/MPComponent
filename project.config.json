@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -50,6 +50,14 @@
 					"id": -1,
 					"name": "省市区选择",
 					"pathName": "pages/city-select/city-select",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "菊花暂无更多",
+					"pathName": "pages/load-more/load-more",
+					"query": "",
 					"scene": null
 				}
 			]
