@@ -24,7 +24,7 @@ The following is an introduction to the catalog structure of the whole project�
 |   ├── load-more            # Chrysanthemum Load More Use
 ├── ..............           
 ```
-## 6位数数字键盘效果   Chrysanthemum Load More Use 
+## 6位数数字键盘效果   6-digit digital keyboard effect
 ![image](https://upload-images.jianshu.io/upload_images/7465865-1485ded5d729692a.gif?imageMogr2/auto-orient/strip)
 ## 省市区 选择效果     Selection Effect of Provincial and Urban Areas
 ![image](https://upload-images.jianshu.io/upload_images/7465865-6d8febb833f8a1cd.gif?imageMogr2/auto-orient/strip)
