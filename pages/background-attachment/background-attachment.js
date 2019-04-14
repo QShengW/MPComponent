@@ -1,33 +1,20 @@
-// pages/index/index.js
+// pages/background-attachment/background-attachment.js
 Page({
+
     /**
      * 页面的初始数据
      */
     data: {
-        list:[
-            {
-                name: '6位数键盘',
-                url: '/pages/key-board/key-board'
-            },
-            {
-                name: '省市区选择',
-                url: '/pages/city-select/city-select'
-            },
-            {
-                name: '菊花加载更多',
-                url: '/pages/load-more/load-more'
-            }, {
-                name: '实现固定的背景图像',
-                url: '/pages/background-attachment/background-attachment'
-            },
-        ]
+
     },
+
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
 
     },
+
     /**
      * 生命周期函数--监听页面初次渲染完成
      */

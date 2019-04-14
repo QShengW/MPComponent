@@ -1,0 +1,19 @@
+<!--pages/background-attachment/background-attachment.wxml-->
+<!-- 在小程序当中 background-attachment 是不支持的 -->
+<view class="swiperMain">
+    <swiper  bindchange="swiperChange">
+        <swiper-item>
+            <view class="slide-image">
+                <view class='header_view'>
+                    <image src="/images/mybg1.jpg" class='bgImage'></image>
+                    <image src='https://image.weilanwl.com/gif/wave.gif' mode='scaleToFill' class='gif-wave'></image>
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+    <view class='bgblack'></view>
+</view>
+
+<view class='p30 flexview'>
+    <text> 在小程序当中 background-attachment 调试上是可以的，在真机就不支持了, 上下滑动我下</text>
+</view>

@@ -6,3 +6,6 @@ page {
     padding: 30rpx;
     box-sizing: border-box;
 }
+.p30{
+    padding: 30rpx
+}

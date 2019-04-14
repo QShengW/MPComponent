@@ -3,7 +3,8 @@
         "pages/index/index",
         "pages/key-board/key-board",
         "pages/city-select/city-select",
-        "pages/load-more/load-more"
+        "pages/load-more/load-more",
+        "pages/background-attachment/background-attachment"
     ],
     "window": {
         "backgroundTextStyle": "light",

@@ -1,0 +1,68 @@
+/* pages/background-attachment/background-attachment.wxss */
+page{
+    background: #fff;
+    padding-bottom: 0;
+    padding: 0
+}
+
+swiper{
+    width:750rpx;
+    height:840rpx;
+    position:fixed;
+}
+.swiperMain {
+    position:relative;
+    height:484rpx;
+    overflow: hidden
+}
+.slide-image{
+    width:750rpx;
+    height:484rpx;
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-size:cover;
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 750rpx;
+    height: 484rpx;
+    z-index: 2
+}
+.bgblack{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 750rpx;
+    height: 484rpx;
+    background: rgba(53, 52, 52, 0.1);
+    z-index: 3
+}
+.header_view {
+    width: 750rpx;
+    height: 484rpx;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.header_view .gif-wave{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  mix-blend-mode: screen;  
+  height: 100rpx;   
+}
+
+.flexview{
+    background: #fff;
+    z-index:10;
+    height: 2000rpx;
+    position:relative;
+    border-radius: 17rpx;
+}
