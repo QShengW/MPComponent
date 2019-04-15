@@ -19,6 +19,12 @@ Page({
             }, {
                 name: '实现固定的背景图像',
                 url: '/pages/background-attachment/background-attachment'
+            }, {
+                name: '滑动操作（如删除）',
+                url: '/pages/sliding-operation/sliding-operation'
+            }, {
+                name: 'Y轴点击选中居中',
+                url: '/pages/scroll-viewY/scroll-viewY'
             },
         ]
     },

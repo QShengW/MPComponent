@@ -1,0 +1,12 @@
+<!--pages/scroll-viewX/scroll-viewX.wxml-->
+<scroll-view
+    scroll-y
+    class="bg-white nav"
+    scroll-with-animation
+    scroll-top="{{scrollTop}}"
+    style='height:{{height}}px'
+>
+  <item class="{{index==TabCur?'text-green cur':''}}" wx:for="{{itemData}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+    {{item}}
+  </item>
+</scroll-view>

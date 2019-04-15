@@ -1,0 +1,30 @@
+/* pages/scroll-viewX/scroll-viewX.wxss */
+/*tab 左右滑动*/
+page{
+    padding: 0;
+    background: #fff
+}
+.nav {
+    width: 200rpx;
+    display: flex;
+    flex-wrap: wrap
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.nav item {
+    width: 170rpx;
+    height: 45px;
+    text-align: center;
+    display: inline-block;
+    line-height: 45px;
+    background: #f8f8f8;
+    font-size: 28rpx
+}
+
+.nav item.cur {
+    background: #fff;
+    color: #e93b3d;
+}

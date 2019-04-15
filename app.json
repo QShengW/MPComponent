@@ -5,7 +5,8 @@
         "pages/city-select/city-select",
         "pages/load-more/load-more",
         "pages/background-attachment/background-attachment",
-        "pages/sliding-operation/sliding-operation"
+        "pages/sliding-operation/sliding-operation",
+        "pages/scroll-viewY/scroll-viewY"
     ],
     "window": {
         "backgroundTextStyle": "light",

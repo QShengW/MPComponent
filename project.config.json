@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -71,6 +71,14 @@
 					"id": -1,
 					"name": "滑动操作",
 					"pathName": "pages/sliding-operation/sliding-operation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "Y轴点击选中居中",
+					"pathName": "pages/scroll-viewY/scroll-viewY",
+					"query": "",
 					"scene": null
 				}
 			]
