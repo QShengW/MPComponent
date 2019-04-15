@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -65,6 +65,12 @@
 					"name": "固定的背景图片",
 					"pathName": "pages/background-attachment/background-attachment",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "滑动操作",
+					"pathName": "pages/sliding-operation/sliding-operation",
 					"scene": null
 				}
 			]

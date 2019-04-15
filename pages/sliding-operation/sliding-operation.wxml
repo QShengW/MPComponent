@@ -1,0 +1,21 @@
+<!--page/swipecell/swipecell.wxml-->
+
+<view 
+    class="viewlist {{item.Selection ? 'Selection' : ''}}"
+    wx:for="{{list}}"
+    data-index="{{index}}"
+    bindtouchstart="touchStart"
+    bindtouchmove="touchmove"
+    wx:key="sw"
+    bindtap='clickHideOperation'
+>
+    <!-- 如果涉及权限的话需要 样式在这边计算 计算 删除 编辑 操作 所滑动的宽的值 如每个90*3=270
+    transform: translateX(270px);
+    margin-left: -270px;  -->
+    <view class="viewlist_content">{{index}}</view>
+    <view class='viewlist_btns'>
+        <view class="viewlist_btn" catchtap="operation" data-type="del">删除</view>
+        <view class="viewlist_btn" catchtap="operation" data-type="edit">编辑</view>
+        <view class="viewlist_btn" catchtap="operation" data-type="operation">操作</view>
+    </view>
+</view>

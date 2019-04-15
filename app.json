@@ -4,7 +4,8 @@
         "pages/key-board/key-board",
         "pages/city-select/city-select",
         "pages/load-more/load-more",
-        "pages/background-attachment/background-attachment"
+        "pages/background-attachment/background-attachment",
+        "pages/sliding-operation/sliding-operation"
     ],
     "window": {
         "backgroundTextStyle": "light",

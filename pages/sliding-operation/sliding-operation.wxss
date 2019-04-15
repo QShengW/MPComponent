@@ -1,0 +1,49 @@
+/* page/swipecell/swipecell.wxss */
+
+.viewlist {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    transform: translate3d(0%,0,0);
+    transition: 0.5s
+}
+
+.viewlist_content {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    margin-right: 0;
+    transform: translateX(270px);
+    margin-left: -270px;
+}
+
+.viewlist_btn {
+    background-color: #dd524d;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.viewlist_btns{
+    background-color: #dd524d;
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transform: translateX(270px);
+    transition: transform .6s;
+    
+}
+.Selection .viewlist_content, .Selection .viewlist_btns {
+    -webkit-transform: translate3d(0%,0,0);
+    -moz-transform: translate3d(0%,0,0);
+    transform: translate3d(0%,0,0);
+    transition: transform .5s;
+}
